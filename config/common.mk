@@ -158,8 +158,9 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     CMSettingsProvider \
-    CMUpdater \
     CMWallpapers \
+    Eleven \
+    LockClock \
     CyanogenSetupWizard \
     Eleven \
     ExactCalculator \
