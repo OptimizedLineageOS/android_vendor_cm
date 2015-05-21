@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
 
 # System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
     vendor/cm/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # init.d support
