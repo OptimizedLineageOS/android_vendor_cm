@@ -250,7 +250,7 @@ ifndef CM_BUILDTYPE
     endif
 endif
 
-# Filter out random types, so it'll reset to UNOFFICIAL
+# Filter out random types, so it'll reset to OPTIMIZED
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
     CM_BUILDTYPE :=
 endif
@@ -277,14 +277,14 @@ ifdef CM_BUILDTYPE
         endif
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    # If CM_BUILDTYPE is not defined, set to OPTIMIZED
+    CM_BUILDTYPE := OPTIMIZED
     CM_EXTRAVERSION :=
 endif
 
-ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
-    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-        CM_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+ifeq ($(CM_BUILDTYPE), OPTIMIZED)
+    ifneq ($(TARGET_OPTIMIZED_BUILD_ID),)
+        CM_EXTRAVERSION := -$(TARGET_OPTIMIZED_BUILD_ID)
     endif
 endif
 
@@ -325,7 +325,7 @@ CM_DISPLAY_VERSION := $(LINEAGE_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
-    ifneq ($(CM_BUILDTYPE), UNOFFICIAL)
+    ifneq ($(CM_BUILDTYPE), OPTIMIZED)
         ifndef TARGET_VENDOR_RELEASE_BUILD_ID
             ifneq ($(CM_EXTRAVERSION),)
                 # Remove leading dash from CM_EXTRAVERSION
@@ -342,6 +342,7 @@ ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
         else
             CM_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(TARGET_VENDOR_RELEASE_BUILD_ID)-$(CM_BUILD)
         endif
+
     endif
 endif
 endif
