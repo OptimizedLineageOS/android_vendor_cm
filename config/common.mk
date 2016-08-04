@@ -243,7 +243,7 @@ ifeq ($(CM_BUILDTYPE), OPTIMIZED)
 endif
 
 
-CM_VERSION := OptimizedCM-13-$(shell date -u +%Y%m%d)
+
 
 ifeq ($(CM_BUILDTYPE), RELEASE)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
@@ -275,6 +275,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cm-priv/keys/keys.mk
 
+CM_VERSION := OptimizedCM-13-$(shell date -u +%Y%m%d)
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
