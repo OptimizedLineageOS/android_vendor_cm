@@ -9,12 +9,11 @@ include vendor/cm/config/cm_audio.mk
 # Optional CM packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
-    HoloSpiralWallpaper \
-    MagicSmokeWallpapers \
     NoiseField \
     PhotoTable \
     SoundRecorder \
-    PhotoPhase
+    PhotoPhase \
+    Screencast
 
 
 # Extra tools in CM
