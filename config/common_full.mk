@@ -10,15 +10,12 @@ include vendor/cm/config/cm_audio.mk
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
-    LiveWallpapers \
-    LiveWallpapersPicker \
     MagicSmokeWallpapers \
     NoiseField \
-    PhaseBeam \
     PhotoTable \
     SoundRecorder \
-    PhotoPhase \
-    Screencast
+    PhotoPhase
+
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
