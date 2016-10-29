@@ -318,7 +318,7 @@ endif
 endif
 endif
 
-OPT_CM_DISPLAY := OptimizedCM-13.0-$(shell date -u +%Y%m%d)-SideFINAL
+OPT_CM_DISPLAY := OptimizedCM-13.0-$(shell date -u +%Y%m%d)-Stable 6
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.display.version=$(OPT_CM_DISPLAY)
 
