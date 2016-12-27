@@ -301,7 +301,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
-  ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
+  ro.cmlegal.url=https://lineageos.org/legal
 
 -include vendor/cm-priv/keys/keys.mk
 
