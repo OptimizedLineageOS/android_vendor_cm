@@ -5,3 +5,8 @@ PRODUCT_PACKAGES += \
     LatinIME
 
 $(call inherit-product, vendor/cm/config/telephony.mk)
+
+ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
+    PRODUCT_COPY_FILES += \
+        vendor/cm/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
+endif
