@@ -300,7 +300,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cm-priv/keys/keys.mk
 
-LINEAGE_VERSION := OptimizedCM-13.0-$(shell date -u +%Y%m%d)
+LINEAGE_VERSION := Optimized-LineageOS-13.0-$(shell date -u +%Y%m%d)
 CM_DISPLAY_VERSION := $(LINEAGE_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
@@ -326,7 +326,7 @@ endif
 endif
 endif
 
-OPT_CM_DISPLAY := OptimizedCM-13.0-$(shell date -u +%Y%m%d)-Stable
+OPT_CM_DISPLAY := Optimized-LineageOS-13.0-$(shell date -u +%Y%m%d)-Stable
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.display.version=$(OPT_CM_DISPLAY)
 
