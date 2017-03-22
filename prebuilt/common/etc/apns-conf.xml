@@ -364,7 +364,7 @@
   <apn carrier="Unefon Modem" mcc="222" mnc="01" apn="modem.iusacellgsm.mx" user="iusacellgsm" password="iusacellgsm" type="dun" mvno_type="spn" mvno_match_data="UNEFON" />
   <apn carrier="Unefon MMS" mcc="222" mnc="01" apn="mms.iusacellgsm.mx" mmsc="http://mms.iusacell3g.com/" user="mmsiusacellgsm" password="mmsiusacellgsm" type="mms" mvno_type="spn" mvno_match_data="UNEFON" />
   <apn carrier="TIM IT" mcc="222" mnc="01" apn="ibox.tim.it" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="TIM IT WAP" mcc="222" mnc="01" apn="wap.tim.it" proxy="213.26.205.1" port="80" user="WAPTIM" password="WAPTIM" server="http://wap.i.tim.it" mmsc="" type="default,supl" />
+  <apn carrier="TIM IT WAP" mcc="222" mnc="01" apn="wap.tim.it" proxy="" port="" user="WAPTIM" password="WAPTIM" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="TIM MMS" mcc="222" mnc="01" apn="mms.tim.it" proxy="" port="" user="" password="" mmsc="http://mms.tim.it/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="iTIM" mcc="222" mnc="01" apn="unico.tim.it" proxy="213.230.130.89" port="80" user="" password="" mmsc="http://mms.tim.it/servlets/mms" mmsproxy="213.230.130.89" mmsport="80" type="mms" />
   <apn carrier="Tiscali INTERNET" mcc="222" mnc="01" apn="tiscalimobileinternet" type="default,supl" />
@@ -3599,8 +3599,8 @@
   <apn carrier="Vodacom ZA" mcc="655" mnc="01" apn="internet" type="default,supl" />
   <apn carrier="Vodacom ZA MMS" mcc="655" mnc="01" apn="mms.vodacom.net" mmsc="http://mmsc.vodacom4me.co.za/" mmsproxy="196.6.128.13" mmsport="8080" type="mms" />
   <apn carrier="LTE.Vodacom" mcc="655" mnc="01" apn="lte.vodacom.za" type="default,supl" />
-  <apn carrier="8ta internet" mcc="655" mnc="02" apn="internet" type="default,supl" />
-  <apn carrier="8ta mms" mcc="655" mnc="02" apn="mms" mmsc="http://mms.8ta.com:38090/was" mmsproxy="41.151.254.162" mmsport="8080" type="mms" />
+  <apn carrier="TelkomSA internet" mcc="655" mnc="02" apn="internet" type="default,supl" />
+  <apn carrier="TelkomSA mms" mcc="655" mnc="02" apn="mms" mmsc="http://mms.8ta.com:38090/was" mmsproxy="41.151.254.162" mmsport="8080" type="mms" />
   <apn carrier="CELL C INTERNET" mcc="655" mnc="07" apn="internet" proxy="" port="8080" mmsproxy="196.31.116.250" mmsport="8080" mmsc="http://mms.cmobile.co.za" type="*" />
   <apn carrier="Cell C MMS" mcc="655" mnc="07" apn="mms" mmsc="http://mms.cmobile.co.za" mmsproxy="196.031.116.250" mmsport="8080" type="mms" />
   <apn carrier="Virgin Mobile SA Internet" mcc="655" mnc="07" apn="vdata" type="default,supl" />
