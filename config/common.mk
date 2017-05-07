@@ -33,13 +33,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/cm/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
-    vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-
 # System feature whitelists
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
