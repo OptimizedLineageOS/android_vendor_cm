@@ -172,6 +172,13 @@
         <item>777800983</item>
         <item>800200007</item>
     </sensitivePN>
+    <!--Israel-->
+    <sensitivePN network="425">
+        <item>1201</item>
+        <item>1202</item>
+        <item>1203</item>
+        <item>1204</item>
+    </sensitivePN>
     <!--Bangladesh-->
     <sensitivePN network="470">
         <item>10921</item>
@@ -192,5 +199,6 @@
     <sensitivePN network="724">
         <item>100</item>
         <item>180</item>
+        <item>181</item>
     </sensitivePN>
 </sensitivePNS>
