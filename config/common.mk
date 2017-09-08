@@ -29,11 +29,14 @@ endif
 # Disable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
-# Copy over the changelog to the device
+# Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    vendor/cm/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/cm/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
+    vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-# System feature whitelists
+# Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
@@ -69,9 +72,6 @@ PRODUCT_COPY_FILES += \
 
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
-
-# Theme engine
-include vendor/cm/config/themes_common.mk
 
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
@@ -113,9 +113,9 @@ PRODUCT_PACKAGES += \
     Eleven \
     ExactCalculator \
     Jelly \
-    LiveLockScreenService \
     LockClock \
     Trebuchet \
+    Updater \
     WallpaperPicker \
     WeatherProvider
 
