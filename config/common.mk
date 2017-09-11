@@ -273,7 +273,7 @@ ifeq ($(CM_BUILDTYPE), OPTIMIZED)
     endif
 endif
 
-LINEAGE_VERSION := Optimized-LineageOS-14.1-$(shell date -u +%Y%m%d)
+LINEAGE_VERSION := Palm-Project-14.1-$(shell date -u +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.version=$(LINEAGE_VERSION) \
